@@ -52,8 +52,8 @@ def render(env, params):
 
 if __name__ == '__main__':
     env = gym.make('CartPole-v0')
-    #best_params, best_reward = random_search(env)
-    best_params, best_reward = hill_climbing(env)
+    best_params, best_reward = random_search(env)
+    #best_params, best_reward = hill_climbing(env)
     print('Best params', best_params)
     print('Best reward', best_reward)
     render(env,best_params)
